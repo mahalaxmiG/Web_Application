@@ -1,0 +1,273 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <!-- Slide to choose Login or Signup -->
+    <section id="chooseOption">
+        <div class="content">
+            <div class="choose-buttons">
+            </div>
+        </div>
+    </section>
+
+    <section id="welcome-parallax">
+        <div class="content">
+            <h2>HELLO.</h2>
+            <h3>Unlock the Chronicles of My Journey</h3>
+            <div class="choose-buttons">
+                <button id="loginButton">Login</button>
+                <button id="signupButton">Signup</button>
+                
+            </div>
+        </div>
+        <div class="parallax-bg">
+            <img src="images/welcome_page.jfif" alt="Welcome Image">
+        </div>
+    </section>
+    
+
+    <section id="login" style="display: none;">
+        <div class="content">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section id="signup" style="display: none;">
+        <div class="content">
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="signupUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Signup</button>
+                </div>
+            </form>
+        </div>
+    </section>
+        <!-- login and signup sections end -->
+        <section id="portfolio" style="display: none;">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#AboutMe">About Me</a></li>
+                        <li><a href="#PersonalLife">Personal Life</a></li>
+                        <li><a href="#MySchooling">My Schooling</a></li>
+                        <li><a href="#CollegeLife">College Life</a></li>
+                        <li><a href="#MyWorkLife">My WorkLife</a></li>
+                        <li><a href="#MyHobbies">My Hobbies</a></li>
+                    </ul>
+                </nav>
+                <button onclick="toggleDarkMode()"> Dark Mode</button>
+                
+        
+                    <!-- Chatbot section (if needed) -->
+    <!-- Chatbot icon -->
+    <div class="chat-icon" id="chat-icon">
+        <img src="images/CHAT_BOT.jfif" alt="Chatbot">
+    </div>
+
+<!-- Chatbot chatbox (initially hidden) -->
+<div class="chat-container" id="chat-container">
+    <div class="chat-header">
+        <span class="close-button" id="close-button">&times;</span>
+    </div>
+    <div class="chat-log" id="chat-log">
+        <!-- Chat messages go here -->
+    </div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+    <div class="chat-icon" id="chat-icon">
+        <img src="images/CHAT_BOT.jfif" alt="Chatbot">
+        
+    </div>
+</div>
+    <!-- Chatbot section end --> 
+    <!-- Social links (if needed) -->
+    
+    <div class="social-links">
+        <a href="https://www.instagram.com/your_instagram_handle/" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/your_facebook_handle/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/your_twitter_handle/" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+    </div>
+   
+</header>
+            <section id="hero">
+                <div class="hero-text">
+                    <h1>WELCOME TO MY PORTFOLIO</h1>
+                </div>
+            </section>
+            <section id="AboutMe">
+                <div class="content">
+                    <!-- <h2>About Me</h2> -->
+                    <div class="about-me-wrapper">
+                        <div class="about-me-text">
+                            <p>Hey, This is Mahalaxmi.G a 22 year old girl,writing her portfolia,stay and scrool through my life,knowing me a little better.</div>
+                        <div class="about-me-image">
+                            <img src="images/about_me.jpg" alt="Your Image 1">
+                        </div>
+                    </div>
+                </div>
+                <a href="#hero">Back to Top</a>
+            </section>
+            
+    
+            <section id="PersonalLife">
+                <div class="content">
+                    <!-- <h2>Personal Life</h2> -->
+                    <div class="project-wrapper">
+                        
+                        <div class="project-card" id="project1">
+                            <div class="project-card-front">
+                                <h3>PERSONAL LIFE</h3>
+                                
+                            </div>
+                            <div class="project-card-back">
+                                <p>
+                                    Hello, and welcome to me sharing a glimpse of my life! I was born on 10/11/2000 in Bombay and completed my schooling up to the 2nd grade in Delhi.
+                                     Then, as a family, we moved to Chennai. I have a small and loving family with five members: my mother, father, sister, and my brother-in-law. My mother and I reside in Chennai, while my father works in Chittoor. My sister and brother-in-law live in Pune.</p>
+                            </div>
+                        </div>
+                        <div class="personal-life-image">
+                            <img src="images/personal_life.jpg" alt="Your Image 2">
+                        </div>
+                    </div>
+                </div>
+                <a href="#hero">Back to Top</a>
+            </section>
+            
+            <section id="MySchooling">
+                <div class="content">
+                    <div class="project-wrapper">
+                        <div class="project-card" id="project1">
+                            <div class="project-card-front">
+                                <h3>MY SCHOOLING</h3>    
+                            </div>
+                            <div class="project-card-back">
+                                <p>
+                                    I did my schooling in AV.Meiyappan.Mat.Hr.Sec.School, the video you see playing is my school, where I have tons of memories. Almost my whole schooling life has been spent in this school. I had a really great time here. My schooling journey wasn't without its share of challenges. There were days of self-doubt and moments when I faced obstacles that seemed insurmountable. However, each challenge was an opportunity to grow, to become resilient, and to learn from mistakes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="school-image">
+                            <img src="images/school.jpg" alt="Your Image 2">
+                        </div>
+                    </div>
+                </div>
+                <a href="#hero">Back to Top</a>
+            </section>
+            
+            
+            <section id="CollegeLife">
+                <div class="content">
+                    <div class="flex-container">
+                        <div class="project-card" id="project1">
+                            <div class="project-card-front">
+                                
+                                <h3>MY COLLEGE LIFE</h3>
+                            </div>
+                            <div class="project-card-back">
+                                <p>I did my college from Easwari Engineering College. College life is a unique and transformative phase in one's educational journey. It's a time of newfound independence, self-discovery, and academic exploration. As I reflect on my own college experience, I can't help but marvel at the profound impact it has had on my life.</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <video controls width="500">
+                                <source src="images/college_videoo.mp4" type="video/mp4">
+                                <!-- Add additional <source> elements for other video formats if needed -->
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <a href="#hero">Back to Top</a>
+            </section>
+            
+            
+            <section id="MyWorkLife">
+                <div class="content">
+                    <div class="section-container">
+                        <div class="project-card" id="project1">
+                            <div class="project-card-front">
+                                
+                                <h3>MY WORKLIFE</h3>
+                            </div>
+                            <div class="project-card-back">
+                                <p>My worklife began with a sense of excitement and uncertainty. Like many others, I embarked on this journey with a set of goals and ambitions, unsure of the twists and turns that lay ahead. Over the days, my career path has evolved, shaped by choices, opportunities, and circumstances.</p>
+                            </div>
+                        </div>
+                        <div class="worklife-life-image">
+                            <img src="images/psiog-digital-office.jpg" alt="Your Image 2">
+                        </div>
+                    </div>
+                </div>
+                <a href="#hero">Back to Top</a>
+            </section>
+            
+            <section id="MyHobbies">
+                <div class="content">
+                    <div class="section-container">
+                        <div class="project-card" id="project1">
+                            <div class="project-card-front">
+                                <h3>MY HOBBIES</h3>
+                            </div>
+                            <div class="project-card-back">
+                                <p>In the grand symphony of life, my hobbies of traveling and listening to music are the notes that give depth, color, and meaning to my journey. Traveling allows me to explore the world's beauty and diversity, while music serves as a universal language that connects me with people and places. Together, these passions harmonize to create a life filled with exploration, understanding, and the boundless joy of discovery.</p>
+                            </div>
+                        </div>
+                        <div class="hobby-video">
+                            <video controls>
+                                <source src="images/Hobbies.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <a href="#hero">Back to Top</a>
+            </section>
+            
+            
+            
+        <!-- </section>
+                <footer>
+                    <p>&copy; 2023 G.Mahalaxmi</p>
+                </footer>
+        </section> -->
+        <!-- <button onclick="toggleDarkMode()">Toggle Dark Mode</button> -->
+        <div class="feedback">
+            <h2><b>Feel free to share your thoughts</b></h2>
+            <button><a class="btn" href="mailto:mahalaxmi10112000@gmail.com">CLICK HERE</a></button>
+          </div>
+    
+        <!-- Portfolio section end -->
+    
+
+    <!-- JavaScript -->
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    
+</body>
+</html>

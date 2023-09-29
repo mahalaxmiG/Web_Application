@@ -1,0 +1,791 @@
+/* Default font size */
+body {
+    font-size: 16px;
+}
+
+/* Media query for screens with a minimum width of 768px */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px; /* Adjust font size for larger screens */
+    }
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Reduce the font size and adjust other styles as needed for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Shrink the boxes and images in each section */
+    .project-card-front,
+    .project-card-back {
+        width: 200px;
+        height: 200px;
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .project-image img {
+        max-width: 100%; /* Make images responsive by setting maximum width to 100% */
+        height: auto; /* Allow images to adjust their height accordingly */
+        margin: 10px auto; /* Center-align the images and provide some spacing */
+    }
+}
+
+
+/* Reset some default styles for cleaner visuals */
+body {
+    background-color:  rgba(128, 75, 125, 0.329);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+/* Dark Mode Styles */
+.toggleDarkMode {
+    background-color: #080808;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #333;
+}
+button {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #333; /* Change to your desired color */
+    color: #fff; /* Change to your desired color */
+}
+
+.login-box,
+.signup-box {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.login-box h2,
+.signup-box h2 {
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: rgb(117, 227, 241)#f5f5f5;
+    color: white;
+    padding: 2px;
+}
+nav {
+    /* background-color: #f3f3f3; */
+    border: 3px solid #000; /* Add a border with a 2px width and black color */
+    
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    
+}
+
+section {
+    padding: 40px;
+    color: #ff6ef8;
+    border: 2px dashed #333; 
+    margin-bottom: 20px;
+    border: 3px solid #000;
+
+}
+
+#hero {
+    background-color: #5714515e;
+    background-size: cover;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-style: arial bold;
+    text-shadow: black;
+    font-size: 32;
+    opacity: 0; /* Set initial opacity to 0 to hide the content */
+    animation: fadeIn 2s ease forwards; /* Apply the fade-in animation */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#PersonalLife {
+    /* Add some padding to the section */
+    padding: 40px;
+}
+
+/* Style for the first image */
+.personal-life-image img {
+    /* Add a border to the image */
+    border: 2px solid #000;
+    /* Set a maximum width for the image */
+    max-width: 50%;
+    /* Center the image within its container */
+    display: block;
+    margin: 0 auto;
+}
+
+
+#MySchooling {
+    padding:40px;
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Vertically center items */
+}
+
+.project-card {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: 50%; /* Adjust the width as needed, you can increase it to make the card wider */
+    
+}
+
+
+.school-image {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: 60%; /* Adjust the width as needed, you can increase it to make the image wider */
+    margin-top: -50px;
+    border: 2px solid #000;
+}
+
+/* Increase the image size */
+.school-image img {
+    max-width: 100%; /* Set the maximum width of the image to 100% (full width) */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+#CollegeLife .flex-container {
+    display: flex;
+    flex-direction: row; /* Horizontal arrangement */
+    align-items: flex-start; /* Align items to the top within the container */
+    justify-content: space-between; /* Space evenly between the two elements */
+}
+
+.project-card {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: 50% /* Adjust the width as needed */
+}
+
+.video-container {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: calc(100% - 20px); /* Adjust the width as needed */
+    margin-top: 30px; /* Add margin to the top to move it down */
+    
+}
+/* Add these styles to your existing CSS file */
+#MyWorkLife {
+    padding: 40px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Vertically center items */
+}
+
+.project-card {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: calc(50% - 10px); /* Adjust the width as needed */
+}
+
+.worklife-life-image {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: 70%;
+    height: auto;
+    border: 2px solid #000;
+}
+/* CSS for the My Hobbies section */
+#MyHobbies {
+    padding: 40px; /* Change the background color as needed */
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Vertically center items */
+}
+
+.project-card {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: 50%; /* Adjust the width as needed, you can increase it to make the card wider */
+}
+
+.hobby-video {
+    flex: 1; /* Allow flex-grow to fill available space */
+    max-width: 50%; /* Adjust the width as needed, you can increase it to make the video wider */
+}
+
+/* Increase the video size */
+.hobby-video video {
+    max-width: 100%; /* Set the maximum width of the video to 100% (full width) */
+    height: auto; /* Maintain the aspect ratio of the video */
+}
+
+
+
+.project-card {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+/* Style for the front of the card */
+.project-card-front,
+.project-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+}
+
+/* Style for the front of the card */
+.project-card-front {
+    background-color:#3801335e; /* Adjust background color as needed */
+    padding: 5px;
+    border: 5px solid #746e6e;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%; /* Adjust the width to fill the container */
+    height: 100%; /* Adjust the height to fill the container */
+    margin: 0; /* Remove margin to prevent spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the back of the card */
+.project-card-back {
+    background-color: #0000005e; /* Adjust background color as needed */
+    color: white; /* Adjust text color as needed */
+    transform: rotateY(180deg);
+    padding: 5px;
+    border: 2px solid #FFF;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%; /* Adjust the width to fill the container */
+    height: 100%; /* Adjust the height to fill the container */
+    margin: 0; /* Remove margin to prevent spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effect to flip the card */
+.project-card:hover .project-card-front {
+    transform: rotateY(180deg);
+}
+
+.project-card:hover .project-card-back {
+    transform: rotateY(0deg);
+}
+
+/* Center-align the content in the project-wrapper */
+.project-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the project images */
+.project-image {
+    max-width: 150px; /* Adjust the image width as needed */
+    margin: 0 10px; /* Add spacing between the images and flipping boxes */
+}
+/* CSS for My Schooling Section */
+#MySchooling {
+    display: flex;
+    flex-direction: column; /* Stacks the elements vertically on small screens */
+    align-items: center; /* Centers the elements horizontally */
+    text-align: center; /* Centers the text content */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Arranges the elements side by side */
+    justify-content: space-between; /* Creates space between the flip card and video */
+    width: 100%; /* Makes the container take up the full width */
+    max-width: 1200px; /* Optional: Limit the maximum width of the container */
+}
+
+.flip-card {
+    width: 48%; /* Adjust the width to your preference */
+    box-sizing: border-box; /* Includes padding and border within the width */
+}
+
+/* Chat bot */
+.chat-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+/* Chatbot chatbox styles */
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 2;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(247, 245, 245, 0.2);
+    border-radius: 5px;
+    overflow: hidden; /* Hide the scroll bar by making the container hidden */
+}
+
+.chat-header {
+    background-color: #ffffff;
+    color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center; /* Center the text */
+}
+
+.close-button {
+    position: absolute; /* Position the close button absolutely */
+    top: 0.1px; /* Adjust the top position as needed */
+    right: 5px; /* Adjust the right position as needed */
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0 10px;
+    color: rgb(8, 4, 4);
+}
+
+.chat-log {
+    height: 200px;
+    overflow-y: scroll;
+    color: #000000; /* Set the text color to black */
+    border: 1px solid #350000;
+    padding: 10px;
+    background-color: #fff; /* Set the background color to white */
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #fff; /* Set the background color to white */
+}
+/* Hide the chatbox when not visible */
+.chat-hidden {
+    display: none;
+}
+.chat-icon img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+}
+/* Chat bot end */
+
+/* Social links */
+.social-links {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.social-links a {
+    margin-left: 10px;
+    left: 200px;
+    top: 80px;
+}
+
+.social-links img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    border-radius: 50%;
+    
+}
+/* Style for the About Me section */
+#About Me {
+    text-align: center;
+    padding: 60px 0;
+    font-family: 'Rubik Glitch', sans-serif;
+    
+}
+
+.about-me-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.about-me-image {
+    flex: 1;
+    text-align: right;
+    padding: 40px;
+}
+
+.about-me-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+}
+.about-me-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    color: rgb(2, 2, 2);
+    font-style: arial;
+    opacity: 0; /* Initially make the element fully transparent */
+    transform: translateY(20px); /* Move the element down by 20px initially */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add a smooth transition effect */
+}
+
+/* Apply the animation when the element becomes visible */
+.about-me-text.active {
+    opacity: 1; /* Make the element fully visible */
+    transform: translateY(0); /* Reset the vertical position */
+}
+
+
+#personallife11 {
+    left :400; /* Move the box to the left */
+    width: 70%; /* You can adjust the width as needed */
+    /* Add any other styling you need */
+}
+#project-wrapper {
+    width: 600px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative;
+}
+
+#project-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 300;
+    opacity: 0;
+    transition: opacity 1s ease; /* Add a smooth transition effect */
+}
+/* Login and Signup */
+#login, #signup {
+    
+        
+        background-size: cover; 
+        font-family: 'ITC Benguiat', sans-serif;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* 100% of the viewport height */
+        background-color: lightgray !important;
+    
+}
+/* Add this CSS to your style.css file */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.9), 0 0 30px rgba(0, 0, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+    }
+}
+
+/* Apply the glow animation to login and signup buttons on hover */
+#loginButton:hover, #signupButton:hover {
+    animation: glow 1s infinite;
+}
+
+#loginForm, #signupForm {
+    position: relative;
+    background-color: #010105;
+    border-radius: 20px;
+    inset: 10px;
+    padding: 10px;
+    z-index: 10;
+    color: #ecf3f5;
+    text-align: center; /* Center text horizontally */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow*/
+}
+.form-group {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust spacing between form fields */
+}
+
+/* Center-align the form buttons */
+button[type="login"] {
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Make the button a block-level element to center it */
+    background-color: #fdfdfd;
+}
+
+
+#login h2, #signup h2 {
+    text-align: center;
+    font-size: 24px;
+    background-color: #000;
+}
+
+#loginForm button, #signupForm button {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    transition: 1s;
+    margin-top: 30px;
+    font-size: 20px;
+    border: none; /* Remove border to make it cleaner */
+    background-color: #01060c; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Parallax scrolling styles */
+#welcome-parallax {
+    position: relative;
+    /* height: 10vh; Adjust the height as needed */
+    text-align: left; 
+    overflow: hidden;
+    min-height: 100vh;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(245, 245, 245, 0.5);
+    background-color: #000000;}
+
+    #welcome-parallax h2{
+        font-size: 100px;
+        text-align:center;
+        color: #d563f1;
+    }
+    #welcome-parallax h3{
+        font-size:60px; ;
+        text-align: center;
+        color: #f89be9;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    /* Apply the typing animation to h2 and h3 elements */
+    #welcome-parallax h2,
+    #welcome-parallax h3 {
+        overflow: hidden; /* Hide overflow of text */
+        white-space: nowrap; /* Prevent text from wrapping */
+        animation: typing 4s steps(60, end) forwards; /* Apply the typing animation */
+    }
+
+.glowing-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.glowing-button:hover {
+    background-color: #2980b9;
+}
+
+
+/* CSS Animation for the login and signup buttons */
+#loginButton, #signupButton {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#loginButton:hover {
+    transform: translateX(-5px);
+    background-color: #333; /* Change to your desired color */
+    color: #fff; /* Change to your desired color */
+}
+
+#signupButton:hover {
+    transform: translateX(5px);
+    background-color: #333; /* Change to your desired color */
+    color: #fff; /* Change to your desired color */
+}
+
+#loginButton,
+#signupButton {
+    width: 100px; /* Adjust the width as needed to make them round */
+    height: 100px; /* Adjust the height to match the width */
+    border-radius: 100%;
+    color : #0c0b0b !important;
+    background-color: #ffffff !important;
+}
+
+.parallax-bg img {
+    width: 100%; /* Make the image cover the entire container width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    position: absolute; /* Position the image within its container */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place it behind other content */
+}
+
+.parallax-bg {
+    /* background-image: url('images/welcome.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 120%;
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s ease-in-out;
+    z-index: -1;
+}
+
+/* Style the content within the parallax container */
+#welcome-parallax .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+/* Style for your buttons can be added here */
+#welcome-parallax .choose-buttons button {
+    /* Add your button styles */
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#welcome-parallax .choose-buttons button:hover {
+    /* Add hover styles */
+    background-color: #0056b3;
+}
+.project-card-front {
+    color: rgb(6, 9, 10);
+    text-align: allign;
+    background-color: #fcc6f7;
+    padding: 5px; /* Adjust the padding as needed */
+    border: 5px solid #746e6e; /* Add a border if desired */
+    font-size: 16px; /* Adjust the font size as needed */
+    border-radius: 50px; /* Rounded edges */
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin: 10px; /* Adjust the margin to control the space around the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;/* Align text to the bottom */
+}
+
+/* Back side of the flipping card */
+.project-card-back {
+    color: rgb(1, 15, 15);
+    text-align: center;
+    background-color: #fcc6f7;
+    padding: 5px; /* Adjust the padding as needed */
+    border: 2px solid #FFF; /* Add a border if desired */
+    font-size: 16px; /* Adjust the font size as needed */
+    border-radius: 50px;
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin: 50px; /* Adjust the margin to control the space around the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Align text to the bottom */
+}
+.project-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+    margin: 50px; /* Adjust the margin to control the space around the images */
+}
+/* CSS for the feedback section */
+.feedback {
+    background-color: #000000; /* Background color */
+    padding: 2px; /* Padding around the content */
+    text-align: center; /* Center-align text */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    /* max-width: 100px; Set a maximum width */
+    margin: 0 auto; 
+    /* position: fixed; */
+
+}
+
+.feedback h2 {
+    font-size: 12px; /* Heading font size */
+    color: #333; /* Heading text color */
+}
+
+.feedback p {
+    font-size: 10px; /* Text font size */
+    color: #666; /* Text color */
+    margin-top: 10px; /* Add some space between heading and text */
+}
+
+.feedback button {
+    background-color: #f7f8f8; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 5px 10px; /* Button padding */
+    font-size: 10px; /* Button font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+
+
+}
+
+.feedback button:hover {
+    background-color: #686767; /* Button background color on hover */
+}
+
+
+
